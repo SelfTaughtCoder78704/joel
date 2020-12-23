@@ -1,0 +1,321 @@
+:root{
+    --dark-grey: #383434;
+    --mid-grey: #6A6363;
+   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+   
+}
+h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: var(--dark-grey);
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 1.5rem;
+}
+
+.btnLight{
+    background: var(--mid-grey);
+    font-size: 1.4rem;
+}
+
+#topBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.btn:hover{
+    background: white;
+    color: var(--dark-grey);
+    border: 1px solid var(--dark-grey);
+}
+
+#main{
+    width: 100%;
+    text-align: center;
+    height: 70vh;
+    background: url(/images/siteBG.png) no-repeat;
+    background-size: cover;
+    
+    position: relative;
+}
+#main .overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.425)
+}
+#main h1{
+    font-size: 72px;
+    margin: 10px 0;
+    font-weight: 500;
+    color: white;
+}
+#main p{
+    font-weight: 500;
+    color: white;
+}
+
+.bottomStrip{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+}
+
+#afterMain{
+    width: 100%;
+    background: url(/images/head.png) no-repeat;
+    background-size: 30%;
+    background-position: center;
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#afterMain h2, #story h2, #patientsSay h2, #contact h3{
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#contact h3{
+    margin: 50px 0;
+}
+
+#afterMain p, #story p, #patientsSay p{
+    width: 50%;
+    margin: 30px auto;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+#story{
+    width: 100%;
+    background: var(--dark-grey);
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#story img{
+    width: 200px;
+}
+
+#readMore{
+    cursor: pointer;
+}
+
+.hiddenStory{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.hiddenStory div{
+    width: 50%;
+    margin: 0 auto;
+}
+.hiddenStory ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style-type: disc;
+    text-align: left;
+}
+
+#story .hiddenStory p{
+    width: 100%;
+}
+
+#patientsSay{
+    width: 100%;
+    color: white;
+    background: var(--mid-grey);
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#patientsSay p{
+    font-family: 'Coda', cursive;
+}
+
+#patientsSay p span{
+    font-weight: bold;
+}
+
+hr{
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+
+#contact{
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#formDiv{
+    border-radius: 0.3rem;
+    width: 100%;
+    background: var(--mid-grey);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#contact .flexer{
+    width: 50%;
+    margin: 0 auto;
+}
+
+form{
+    width: 100%;
+    display: grid;
+    grid-gap: 1em;
+}
+
+form input, textarea {
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    padding: 10px 0 10px 10px;
+    border: none;
+    outline: none;
+}
+
+.long{
+    padding: 10px;
+    font-size:1.3rem ;
+    background: var(--dark-grey);
+    color: white;
+    transition: 0.5s;
+    border-radius: 0.3rem;
+}
+
+.long:hover{
+    background: white;
+    color: var(--dark-grey);
+}
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background:var(--dark-grey);
+    color: white;
+}
+
+@media only screen and (max-width: 1024px){
+    #main h1{
+        font-size: 36px;
+    }
+    #topBtn{
+        font-size: 1.2rem;
+    }
+    #afterMain{
+        background-size: 60%;
+        padding: 20px 0;
+    }
+    #afterMain h2, #story h2, #patientsSay h2, #contact h3{
+        font-size: 28px;
+    }
+    #afterMain h2{
+        font-weight: 500;
+    }
+    #afterMain p, #story p, #patientsSay p{
+        font-size: 16px;
+        width: 80%;
+    }
+    #contact .flexer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+   
+    #main h1{
+        font-size: 36px;
+    }
+    #topBtn{
+        font-size: 1.2rem;
+    }
+
+    #afterMain{
+        background-size: contain;
+        padding: 50px 0;
+    }
+    #afterMain p, #story p, #patientsSay p{
+        line-height: 24px;
+    }
+
+    .hiddenStory div{
+        width: 80%;
+    }
+
+    #contact .flexer{
+        padding: 10px;
+    }
+
+    #contact{
+        padding:0;
+    }
+
+    #formDiv{
+        padding: 10px;
+    }
+
+    form input{
+        font-size: 1rem;
+    }
+    #patientsSay{
+        padding: 50px 0;
+    }
+
+    #patientsSay .hiddenStory p{
+        font-size: 1rem;
+    }
+}
