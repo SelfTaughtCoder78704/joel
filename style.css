@@ -84,7 +84,7 @@ h2, h3{
    
 }
 #main #theP{
-    animation: fadeInUp ease 3s; 
+    animation: fadeInUp ease 3s !important; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
 }
