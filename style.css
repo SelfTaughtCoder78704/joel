@@ -44,6 +44,10 @@ h2, h3{
 }
 
 
+.btn img{
+    width: 20px;
+}
+
 .btn:hover{
     background: white;
     color: var(--dark-grey);

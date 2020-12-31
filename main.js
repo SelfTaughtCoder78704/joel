@@ -2,6 +2,22 @@ let bookImage = document.getElementById('readMore')
 let open = false;
 bookImage.addEventListener('mouseover', changeImage)
 
+let btns = document.querySelectorAll('.call')
+let phone = document.querySelectorAll('.call img')
+
+btns.forEach(btn => {
+    btn.addEventListener("mouseover", function(){
+        this.children[0].src = "/images/blackPhone.png"
+    })
+})
+
+btns.forEach(btn => {
+    btn.addEventListener("mouseleave", function(){
+        this.children[0].src = "/images/phone.png"
+    })
+})
+
+
 function changeImage(){
     this.src = '/images/bookHover.png'
 }
